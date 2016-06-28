@@ -1,1 +1,19 @@
-%h1 Hello Sandlightning
+.container
+  .row
+    .col-sm-8
+      %p{style: "text-align: left; font-size: larger; font-style: italic"} 
+        Q. What's more fun than charades or sitting around drinking beers at the beach house? 
+      %p{style: "text-align: left; font-weight: bold; font-size: larger"} 
+        A. An evening of short "lighting talk" presentations by your family and friends!
+      %p
+        = link_to 'Learn More', root_path, class: 'btn btn-info btn-block'
+
+    .col-sm-4(style="text-align:center")
+      .embed-responsive.embed-responsive-4by3
+        %iframe.embed-responsive-item { src: "//www.youtube.com/embed/A8pMb9JMKg0?controls=0&showinfo=0&rel=0" }
+
+
+.spacer
+
+.well
+  =# render 'forums/list'

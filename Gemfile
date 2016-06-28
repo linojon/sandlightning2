@@ -29,11 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'haml-rails'
-gem 'bootstrap'
-# http://tether.io/
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :production do
   gem 'pg'

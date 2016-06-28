@@ -1,10 +1,10 @@
 !!!
 %html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Sandlightning2
-    = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  = render 'layouts/head'
   %body
-    = yield
+    = render 'layouts/navbar'
+    = render 'layouts/jumbotron'
+    #main.container
+      = render 'layouts/flash'
+      = yield
+    = render 'layouts/footer'
