@@ -5,3 +5,72 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create! email: 'jonathan@linowes.com', password: 'secret', password_confirmation: 'secret'
+
+capecod = Forum.create! title: 'Linowes/ Alinsky/ Allen Family Summer Vacation',
+    location: 'Cape Cod, Massachusetts',
+    presented_on: 'July 4, 2014'
+
+capecod.talks.create title: 'How to Bake French Bread',
+    author: 'Jonathan Linowes',
+    ytId: 'fuSBd--tWic' ,
+    position: 1
+
+capecod.talks.create title: 'A Short Walk Around the World',
+    author: 'David Alinsky',
+    ytId: 'Rncx8VP9QuQ',
+    position: 2
+
+capecod.talks.create title: 'My 92 Happy Years Beget Yours',
+    author: 'Dorothy Linowes',
+    ytId: '9ts3ojDRxiU' ,
+    position: 3
+
+capecod.talks.create title: 'Dynamic Positioning of Unmanned Underwater Vehicles (UUVS)',
+    author: 'Jarrett Linowes',
+    ytId: 'wedmXbAjt8c' ,
+    position: 4
+
+capecod.talks.create title: 'Photos of Chicago from My First Year at College',
+    author: 'Russell Allen',
+    ytId: '56JNR_Z_MuM' ,
+    position: 5
+
+capecod.talks.create title: 'Chakras: Energy Centers of Your Body',
+    author: 'Gregory Allen',
+    ytId: 'lxTSor94vfg' ,
+    position: 6
+
+capecod.talks.create title: 'The Proper Way to Sit and Stand',
+    author: 'Steven Linowes',
+    ytId: 'sq5z2A_UuXw' ,
+    position: 7
+
+capecod.talks.create title: "We're Building a Church in Rural Uganda",
+    author: 'Irene Nakamya',
+    ytId: '_Rz9jO_wqJI' ,
+    position: 8
+
+capecod.talks.create title: "Aardvarks!!",
+    author: 'Shelby Alinsky',
+    ytId: 'cUXdqVYkHLY' ,
+    position: 9
+
+capecod.talks.create title: 'How to Change Public Opinion on Major Issues',
+    author: 'Lisa Linowes',
+    ytId: 'ksNaZ8zhofw' ,
+    position: 10
+
+capecod.talks.create title: 'How to Give the Perfect Presentation',
+    author: 'Joanne Linowes Alinsky',
+    ytId: 'RhLDFuFhrKw' ,
+    position: 11
+
+capecod.talks.create title: 'Tap Dancing Demo',
+    author: 'Asher Allen',
+    ytId: 'SUliUb5_ERY' ,
+    position: 12
+
+
+

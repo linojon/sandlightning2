@@ -1,0 +1,6 @@
+= link_to forum, class: 'list-group-item bg-info', style: 'background-color: #d9edf7' do
+  %p.pull-right
+    %span.glyphicon.glyphicon-chevron-right
+
+    %h4.list-group-item-heading= forum.title
+    %p= "#{forum.presented_on.strftime "%B %e, %Y"} - #{forum.location}"

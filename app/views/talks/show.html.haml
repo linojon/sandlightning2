@@ -1,0 +1,31 @@
+.row
+  .col-md-12
+    %p(style="margin: 1em 0;")
+      = link_to "&larr; back to #{@forum.title}".html_safe, @forum, style: "white-space:normal", class: "btn btn-default"
+
+    .embed-responsive.embed-responsive-4by3
+      %iframe.embed-responsive-item{ src: "//www.youtube.com/embed/#{@talk.ytId}?autoplay=1&autohide=1&showinfo=0&rel=0", width: "640", height: "390",  allowfullscreen: true }
+    %h1= @talk.title
+    %h3= @talk.author
+    %p= @forum.presented_on.strftime "%B %e, %Y"
+    - if @prev_talk
+      %p.pull-left
+        = link_to [@forum, @prev_talk], style: "font-size: 2em; color: #aaa", class: 'btn', title: @prev_talk.title do
+          %span.glyphicon.glyphicon-chevron-left
+
+    - if @next_talk
+      %p.pull-right
+        = link_to [@forum, @next_talk], style: "font-size: 2em; color: #aaa", class: 'btn', title: @next_talk.title do
+          %span.glyphicon.glyphicon-chevron-right
+
+    / .clearfix
+    / %hr
+    / %h4 Comments
+    / %ul.list-group
+    /   %li.list-group-item
+    /   /   if currentUser
+    /   /     +commentCreate
+    /   /   else
+    /   /     em Please log in to leave a comment.
+    /   / each comments
+    /   /   +commentItem

@@ -1,0 +1,10 @@
+.talk.col-md-4.col-sm-6.col-xs-12
+  .talk-content.thumbnail.well
+    = link_to [talk.forum, talk] do
+      = image_tag "http://img.youtube.com/vi/#{talk.ytId}/mqdefault.jpg"
+      .caption(style="height:120px")
+        %h4= talk.title
+        %p
+          %span= talk.author
+          =# if commentsPresent 
+          =#  span.small ({{commentsCount}} comments)
