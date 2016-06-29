@@ -73,4 +73,53 @@ capecod.talks.create title: 'Tap Dancing Demo',
     position: 12
 
 
+capecod15 = Forum.create! title: 'Linowes/ Alinsky/ Allen Family Summer Vacation',
+    location: 'Cape Cod, Massachusetts',
+    presented_on: 'July 4, 2015'
+
+capecod15.talks.create title: 'How the Internet Works',
+    author: 'Jonathan Linowes',
+    ytId: '' ,
+    position: 1
+
+capecod15.talks.create title: 'What will be the Cause of the Next Mass Extinction?',
+    author: 'Dahlia Linowes',
+    ytId: '' ,
+    position: 2
+
+capecod15.talks.create title: 'Farmers Vs. Life at Our Farm',
+    author: 'Shira Linowes',
+    ytId: '' ,
+    position: 3
+
+capecod15.talks.create title: 'Raccoons: Hidden Masters of the Forest',
+    author: 'Natan Linowes',
+    ytId: '' ,
+    position: 4
+
+capecod15.talks.create title: 'Underwater Sounds',
+    author: 'Jarrett Linowes',
+    ytId: '' ,
+    position: 5
+
+capecod15.talks.create title: 'Sacred Geometry',
+    author: 'Gregory Allen',
+    ytId: '' ,
+    position: 6
+
+capecod15.talks.create title: 'Lessons From Your Grandpa',
+    author: 'Richard Linowes',
+    ytId: '' ,
+    position: 7
+
+capecod15.talks.create title: 'Crash Course Kids',
+    author: 'Shelby Alinsky',
+    ytId: '' ,
+    position: 8
+
+capecod15.talks.create title: 'Ask the Doctor',
+    author: 'Rachel Harris Alinsky',
+    ytId: '' ,
+    position: 9
+
 

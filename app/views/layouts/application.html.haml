@@ -3,7 +3,7 @@
   = render 'layouts/head'
   %body
     = render 'layouts/navbar'
-    = render 'layouts/jumbotron' if controller.controller_name=='pages'
+    = render 'layouts/jumbotron' if ['home','about'].include? action_name
     #main.container
       = render 'layouts/flash'
       = yield

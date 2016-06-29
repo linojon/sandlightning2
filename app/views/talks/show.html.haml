@@ -4,7 +4,12 @@
       = link_to "&larr; back to #{@forum.title}".html_safe, @forum, style: "white-space:normal", class: "btn btn-default"
 
     .embed-responsive.embed-responsive-4by3
-      %iframe.embed-responsive-item{ src: "//www.youtube.com/embed/#{@talk.ytId}?autoplay=1&autohide=1&showinfo=0&rel=0", width: "640", height: "390",  allowfullscreen: true }
+      - if @talk.ytId.present?
+        %iframe.embed-responsive-item{ src: "//www.youtube.com/embed/#{@talk.ytId}?autoplay=1&autohide=1&showinfo=0&rel=0", width: "640", height: "390",  allowfullscreen: true }
+      - else
+        %div.embed-responsive-item{ style: 'text-align:center; font-style: italic; margin: auto; padding-top: 170px; width: 100%; height: 100%; border: 3px gray solid' }
+          Video not uploaded
+
     %h1= @talk.title
     %h3= @talk.author
     %p= @forum.presented_on.strftime "%B %e, %Y"
