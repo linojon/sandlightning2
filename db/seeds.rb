@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.find_or_create email: 'jonathan@linowes.com', password: 'secret', password_confirmation: 'secret'
+User.first_or_create email: 'jonathan@linowes.com', password: 'secret', password_confirmation: 'secret'
 
 capecod = Forum.create! title: 'Linowes/ Alinsky/ Allen Family Summer Vacation',
     location: 'Cape Cod, Massachusetts',
