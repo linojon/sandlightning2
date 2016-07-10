@@ -1,13 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# to seed production
+# $ heroku run bin/rails c
+#   > Forum.destroy_all
+# $ heroku run bin/rails db:seed
 
 User.first_or_create email: 'jonathan@linowes.com', password: 'secret', password_confirmation: 'secret'
 
+#####
 capecod = Forum.create! title: 'Linowes/ Alinsky/ Allen Family Summer Vacation',
     location: 'Cape Cod, Massachusetts',
     presented_on: 'July 4, 2014'
@@ -73,53 +71,54 @@ capecod.talks.create title: 'Tap Dancing Demo',
     position: 12
 
 
+#####
 capecod15 = Forum.create! title: 'Linowes/ Alinsky/ Allen Family Summer Vacation',
     location: 'Cape Cod, Massachusetts',
     presented_on: 'July 4, 2015'
 
-capecod15.talks.create title: 'How the Internet Works',
+capecod15.talks.create title: 'Internet Technologies You Should Know',
     author: 'Jonathan Linowes',
-    ytId: '' ,
+    ytId: 'V9P_IqwL-O4' ,
     position: 1
 
 capecod15.talks.create title: 'What will be the Cause of the Next Mass Extinction?',
     author: 'Dahlia Linowes',
-    ytId: '' ,
+    ytId: 'w0LOtEdl2hs' ,
     position: 2
 
-capecod15.talks.create title: 'Farmers Vs. Life at Our Farm',
+capecod15.talks.create title: 'Farmers vs Life at Our Farm',
     author: 'Shira Linowes',
-    ytId: '' ,
+    ytId: 'EQVxKE4_HVE' ,
     position: 3
 
 capecod15.talks.create title: 'Raccoons: Hidden Masters of the Forest',
     author: 'Natan Linowes',
-    ytId: '' ,
+    ytId: 'yzwvN8GRvow' ,
     position: 4
 
 capecod15.talks.create title: 'Underwater Sounds',
     author: 'Jarrett Linowes',
-    ytId: '' ,
+    ytId: 'E3MrVtNiaVU' ,
     position: 5
 
 capecod15.talks.create title: 'Sacred Geometry',
     author: 'Gregory Allen',
-    ytId: '' ,
+    ytId: 'GeAfcLndOBQ' ,
     position: 6
 
 capecod15.talks.create title: 'Lessons From Your Grandpa',
     author: 'Richard Linowes',
-    ytId: '' ,
+    ytId: '88cpIkCJvAY' ,
     position: 7
 
 capecod15.talks.create title: 'Crash Course Kids',
     author: 'Shelby Alinsky',
-    ytId: '' ,
+    ytId: '7ubWnGdI8fU' ,
     position: 8
 
 capecod15.talks.create title: 'Ask the Doctor',
     author: 'Rachel Harris Alinsky',
-    ytId: '' ,
+    ytId: '7ZDnNDJ_2yQ' ,
     position: 9
 
 
