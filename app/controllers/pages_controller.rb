@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @forums = Forum.order("created_at DESC").all
+    @forums = Forum.all
   end
 
 end
