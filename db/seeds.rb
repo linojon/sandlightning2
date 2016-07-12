@@ -111,14 +111,66 @@ capecod15.talks.create title: 'Lessons From Your Grandpa',
     ytId: '88cpIkCJvAY' ,
     position: 7
 
-capecod15.talks.create title: 'Crash Course Kids',
+capecod15.talks.create title: 'YouTube Channels for Kids: Crash Course',
     author: 'Shelby Alinsky',
+    # description: 'My work on YouTube channels for kids',
     ytId: '7ubWnGdI8fU' ,
     position: 8
 
 capecod15.talks.create title: 'Ask the Doctor',
-    author: 'Rachel Harris Alinsky',
+    author: 'Rachel Alinsky',
     ytId: '7ZDnNDJ_2yQ' ,
+    position: 9
+
+#####
+capecod16 = Forum.create! title: 'Linowes/ Alinsky/ Allen Family Summer Vacation',
+    location: 'Cape Cod, Massachusetts',
+    presented_on: 'July 3, 2016'
+
+capecod16.talks.create title: 'Introduction',
+    author: 'Jonathan Linowes',
+    ytId: 'khFfJbU6AD8' ,
+    position: 1
+
+capecod16.talks.create title: 'Intro to Virtual Reality',
+    author: 'Jonathan Linowes',
+    ytId: 'w-NpXAGpv7U' ,
+    position: 2
+
+
+capecod16.talks.create title: 'Aspects of IoT (Internet of Things)',
+    author: 'Jarrett Linowes',
+    ytId: '2V_jGfW7Pj4' ,
+    position: 3
+
+capecod16.talks.create title: 'Ruptured #AchillesHEAL',
+    author: 'Rayna Linowes',
+    ytId: 'TsJOYp3ombY' ,
+    position: 4
+
+capecod16.talks.create title: 'AARCH: 5 Ways to Give Away Your Money',
+    author: 'Joanne Alinsky',
+    ytId: 'aKMH-r0-JtE' ,
+    position: 5
+
+capecod16.talks.create title: 'My Trip to Southeast Asia',
+    author: 'Shira Linowes',
+    ytId: 'tOJjl_bi62o' ,
+    position: 6
+
+capecod16.talks.create title: 'How the Running Shoe Industry was Developed Through Faulty Science',
+    author: 'Steven Linowes',
+    ytId: 'OAk6M3Z5C0E' ,
+    position: 7
+
+capecod16.talks.create title: 'Game Development Process QA',
+    author: 'Russell Allen',
+    ytId: 'PALegMjjoKk' ,
+    position: 8
+
+capecod16.talks.create title: 'Crop Circles: An Unexplained Phenomena',
+    author: 'Gregory Allen',
+    ytId: 'gBUYXpdlxBE' ,
     position: 9
 
 
